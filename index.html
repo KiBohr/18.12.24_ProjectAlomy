@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>alomy</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./assets/js/main.js" defer></script>
+    <script>
+        tailwind.config = {
+        theme: {
+            letterSpacing: {
+              // "more-space": "1.4rem",
+              // "p-space": "1rem",
+            },
+            extend: {
+            colors: {
+                "font-color-brown": "#E8BF96",
+                "background-color": "#3C3636",
+                "white": "#FFFFFF",
+                "beige": "#E8BF96",
+                "p-grey": "#999999",
+                "border-grey": "#524d4a",
+            },
+            fontSize: {
+                "meine-größe": "7rem",
+                "h1": "14rem",
+                "h2": "9rem",
+                "h3": "11rem",
+            },
+              // lineHeight: {
+              //   "extra-loose": "184.21%",
+              //   "p-height": "165%",
+            
+            fontWeight: {
+                "thin": "100",
+                "light": "200",
+                "lighter": "300",
+                "medium": "400",
+            },
+        },
+
+            margin: {
+                "universal-m": "4vh 20vw ",
+            },
+            },
+        };
+    </script>
+
+    <!-- * general stylings                          -->
+
+    <style type="text/tailwindcss">
+        @layer base{
+
+            @font-face {
+                font-family: inter;
+                src: url("./assets/fonts/Inter-VariableFont_opsz\,wght.ttf");
+            }
+
+            @font-face {
+                font-family: NY;
+                src: url("./assets/fonts/NewYork\ PERSONAL\ USE.otf");
+            }
+
+            html {
+                @apply bg-background-color;
+                @apply text-white;
+                @apply text-[10px];
+                @apply font-[inter];
+            }
+        }
+    </style>
+</head>
+<body>
+
+     <!-- *header                                     -->
+    <header class="mx-[5vw] my-[3vh] font-[inter] font-medium mb-[5vh]">
+        <nav class="flex justify-between items-center">
+            <img src="./assets/img/alomy_logo.png" alt="Logo of alomy">
+
+            <div class="text-white flex gap-[2vw] text-[1.3rem] text-w">
+                <a href="" class="text-beige">Home</a>
+                <a href="">About</a>
+                <a href="">Service</a>
+                <a href="">Blog</a>
+                <a href="">Award</a>
+                <a href="">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+    <!-- *hero                                           -->
+    
+    <section class="flex relative justify-between m-universal-m h-[110vh] border-b-[ solid 1px border-grey]">
+            <!-- ?area left -->
+            <article class="flex flex-col gap-[15vh] items-center w-[33%] absolute top-[20vh] left-[-5vw]" >
+                <div class="w-[20rem]">
+                    <img src="./assets/img/22.jpeg" alt="female looking person in a field" >
+                </div>
+                
+                <div class="flex gap-[2vw]">
+                    <img src="./assets/img/sparcle.png" alt="icon of three sparcles" class="w-[4rem] mb-[2vh]">
+                    <div>
+                        <img src="./assets/img/small-arrow-up.png" alt="small round arrrow facing up right" class="h-[1.5rem]">
+                        <p>Fashion</p>
+                        <p>Week - 2020</p>
+                    </div>
+                </div>
+            </article>
+            <!-- ? area middle -->
+            <article class="flex flex-col gap-[2vh] items-center justify-center text-center w-[33%] z-30 absolute left-[33%] top-0">
+                <img src="./assets/img/open lightbox.png" alt="circle with a play button in the middle" class="h-[5rem] cursor-pointer">
+                <div>
+                    <h2 class="text-h1 font-[NY] leading-[150px]">Unrivaled Shally</h2>
+                </div>
+                <h1 class="font-[NY] text-[3rem] mb-[7vh]">A Creative <span class="text-beige">Fashion</span> Designer</h1>
+    
+                <div class="relative">
+                    <img src="./assets/img/three-strooks.png" alt="three brown strooks left up" class="absolute top-[-5vh] left-[-2.8vw]">
+                    <div class="h-[22rem]">
+                        <img src="./assets/img/17.jpeg" alt="female looking child looking into the camera" class="size-full">
+                    </div>
+                </div>
+                    
+            </article>
+    
+            <!-- ? area right -->
+    
+            <article class=" flex flex-col items-center absolute right-[-5vw]  w-[33%] gap-[10vh]">
+                <div class=" w-[25rem] h-[40rem]">
+                    <img src="./assets/gifs_videos/daisy.gif" alt="female looking person in a filed with summery clothes" class="size-full object-cover">
+                </div>
+                
+                <p class="w-[60%] text-[1.3rem] text-p-grey">Working as a <span class="text-white">creative and outsource</span> your fashion design project and get it quickly done and delivered remotely online</p>
+            </article>
+            <div class="w-[100%] h-[2px] bg-border-grey absolute bottom-[-10vh]"></div>
+    </section>
+
+<!-- * section 2: content -->                                           
+    <section class="flex flex-col gap-[4vh] items-center justify-center m-universal-m text-center mt-[25vh]">
+        <h2 class="font-[NY] text-h2 leading-[100px]">Fashion for passion & life style</h2>
+
+        <p class="font-[inter] text-[1.6rem] text-p-grey">We formulate intentionally crafted supplements for thoughtful people like you – using only the highest quality ingredients at effective doses. Empowering you to take control of your wellness, look and feel great, and live a life brimming with energy.</p>
+
+        <a href="" class="p-[2rem] text-[1.2rem] border-style:solid border-[1px] rounded-full border-border-grey">Check My Works</a>
+        <div class="w-[100%] h-[2px] bg-border-grey mb-[10vh]"></div>
+    </section>
+
+    <!-- *section 3: portfolio                                       -->
+
+    <section class="m-universal-m">
+
+        <article class="flex flex-col mb-[10vh]">
+            <h2 class="font-[NY] text-h2 w-[30%] leading-[90px] mb-[2vh]">Selected Works</h2>
+            <div class="flex justify-between items-center">
+                <div class="w-[10%] h-[2px] bg-white px-[4vw]"></div>
+                <p class="text-p-grey text-[1.2rem] w-[40%] ">Creative work of natural source from, We select only those modern works also my planet your products.</p>
+                <a href="" class="p-[2rem] text-[1.2rem] border-style:solid border-[1px] rounded-full border-border-grey">View All Works</a>
+            </div>
+        </article>
+        <!-- ? erste Bilder section -->
+        <article class="flex gap-[10vw] items-center justify-between mb-[20vh]">
+            <div class="h-[60vh] w-[25vw] relative">
+                <div class="absolute top-[3rem] left-[3rem] opacity-0 hover:opacity-100 ease-in-out duration-300">
+                    <img src="./assets/img/small-arrow-up.png" alt="" class="h-[1rem] mb-[1vh]">
+                    <p>DELEVOPMENT</p>
+                    <h3 class="font-[NY] text-[2.5rem] w-[30%]">Stefanie Brückler</h3>
+                </div>
+                <img src="./assets/img/1.jpeg" alt="profil of a female looking body with jewellery" class="size-full object-cover">
+            </div>
+        <!-- ? zweite Bilder section -->
+            <div class=" h-[30rem]  w-[20rem] relative">
+                <div class="absolute top-[3rem] left-[3rem] opacity-0 hover:opacity-100 ease-in-out duration-300">
+                    <img src="./assets/img/small-arrow-up.png" alt="" class="h-[1rem] mb-[0.5vh]">
+                    <p>Creative</p>
+                    <h3 class="font-[NY] text-[2.5rem] w-[30%]">Shelby Hypol</h3>
+                </div>
+                <img src="./assets/img/2.jpeg" alt="a female looking person with a green outfit" class="size-full object-cover ">
+            </div>
+        </article>
+
+        <!-- ? dritte Bilder section -->
+    
+        <article class="flex gap-[10vw] items-center justify-between">
+            <div class=" h-[30rem]  w-[20rem] relative">
+                <div class="absolute top-[3rem] left-[3rem] opacity-0 hover:opacity-100 ease-in-out duration-300">
+                    <img src="./assets/img/small-arrow-up.png" alt="" class="h-[1rem] mb-[0.5vh]">
+                    <p>Web Design</p>
+                    <h3 class="font-[NY] text-[2.5rem] w-[30%]">Visual Identity</h3>
+                </div>
+                <img src="./assets/img/4.jpeg" alt="a female looking person with a green outfit" class="size-full object-cover ">
+            </div>
+
+        <!-- ? vierte  Bilder section -->
+        
+            <div class="h-[70vh] w-[35vw] relative mb-[10vh]">
+                <div class="absolute top-[3rem] left-[3rem] opacity-0 hover:opacity-100 ease-in-out duration-300">
+                    <img src="./assets/img/small-arrow-up.png" alt="" class="h-[1rem] mb-[1vh]">
+                    <p>Branding</p>
+                    <h3 class="font-[NY] text-[2.5rem] w-[30%]">Etienne Godiard</h3>
+                </div>
+                <img src="./assets/img/5.jpeg" alt="profil of a female looking body with jewellery" class="size-full object-cover">
+            </div>
+        </article>
+
+        <article>
+            <div class="flex justify-between mb-[0.8vh]">
+                <p class="text-[1.2rem] cursor-pointer">Service</p>
+                <p class="text-p-grey test-[1.2rem] cursor-pointer">My Expertise in this Area</p>
+                <p class="text-[1.2rem] cursor-pointer">Let´s Talk</p>
+            </div>
+            <div class="w-[100%] h-[2px] bg-border-grey mb-[10vh]"></div>
+        </article>
+    </section>
+
+    <!-- *  section 4 - services                                     -->
+
+    <!-- ?img 1 layer -->
+
+    <section class="relative m-universal-m">
+        <article class="absolute left-[-20%] top-[30%] h-[35rem]">
+            <img src="./assets/img/17.jpeg" alt="" class="object-cover size-full">
+        </article>
+
+        <article class="absolute right-[-13%] top-[3%] h-[25rem]">
+            <img src="./assets/img/16.jpeg" alt="" class="object-cover size-full">
+        </article>
+
+        <!-- ? text -->
+
+        <article class="flex flex-col justify-center items-center gap-[2vh]">
+            <div class="text-center">
+                <h2 class="font-[NY] text-h2 text-beige mb-[-2vh]">Costume</h2>
+                <p class="text-[1.6rem] text-p-grey">Cloth & Wearing</p>
+            </div>
+            <div class="text-center">
+                <h2 class="font-[NY] text-h2 mb-[-2vh]">Acting</h2>
+                <p class="text-[1.6rem] text-p-grey">Character</p>
+            </div>
+            <div class="text-center">
+                <h2 class="font-[NY] text-h2 mb-[-2vh]">Modelling</h2>
+                <p class="text-[1.6rem] text-p-grey">Fasion & Life Style</p>
+            </div>
+            <div class="text-center mb-[20vh]">
+                <h2 class="font-[NY] text-h2 mb-[-2vh]">Artist</h2>
+                <p class="text-[1.6rem] text-p-grey">Creative Designer</p>
+            </div>
+        </article>
+        <div class="w-[100%] h-[2px] bg-border-grey mb-[10vh]"></div>
+    </section>
+
+    <!-- * section 5 - blog                             -->
+
+    <section class="m-universal-m">
+
+        <article class="mb-[5vh]">
+            <h2 class="font-[NY] text-h2">My Blogs</h2>
+            <div class="flex justify-between items-start">
+                <div class="w-[10%] h-[3px] bg-p-grey px-[4vw]"></div>
+
+                <p class="w-[55%] text-[1.2rem] text-p-grey">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here.
+                </p>
+
+                <a href="" class="p-[2rem] text-[1.2rem] border-style:solid border-[1px] rounded-full border-border-grey">View All Blogs</a>
+            </div>
+        </article>
+
+        <!-- ? picture section 1 -->
+
+        <article class="flex gap-[1vw]">
+            <div class="w-[33%]">
+                <div>
+                    <div class="w-[25rem] h-[25rem] mb-[1vh]">
+                        <img src="./assets/img/7.jpeg" alt="female looking person sitting infront of a laptop working" class=" object-cover size-full">
+                    </div>
+                </div>
+                <div>
+                    <div class="flex gap-[2vw] text-p-gre mb-[1vh]">
+                        <p>Marketing</p>
+                        <p>Oct. 24, 2022</p>
+                    </div>
+                    <p class="font-[NY] text-[1.5rem]">Why Successful People Wear The Same Thing Every Day.</p>
+                </div>
+            </div>
+
+            <!-- ? picture section 2 -->
+            <div class="w-[33%]">
+                <div>
+                    <div class="w-[25rem] h-[25rem] mb-[1vh]">
+                        <img src="./assets/img/8.jpeg" alt="female looking person sitting infront of a laptop working" class=" object-cover size-full">
+                    </div>
+                </div>
+                
+                <div>
+                    <div class="flex gap-[2vw] text-p-gre mb-[1vh]">
+                        <p>UI Design</p>
+                        <p>Oct. 24, 2022</p>
+                    </div>
+                    <p class="font-[NY] text-[1.5rem]">The Quickest Way to Deliver Your Message? Make It Visual.</p>
+                </div>
+            </div>
+
+            <!-- ? picture section 3 -->
+            
+            <div class="w-[33%] mb-[20vh]">
+                <div>
+                    <div class="w-[25rem] h-[25rem] mb-[1vh]">
+                        <img src="./assets/img/9.jpeg" alt="female looking person sitting infront of a laptop working" class=" object-cover size-full">
+                    </div>
+                </div>
+            
+                <div>
+                    <div class="flex gap-[2vw] text-p-gre mb-[1vh]">
+                        <p>Marketing</p>
+                        <p>Oct. 24, 2022</p>
+                    </div>
+                    <p class="font-[NY] text-[1.5rem]">The Easiest Way to Become a Successful Writer and Authors.</p>
+                </div>
+            </div>
+        </article>
+    </section>
+
+    <!-- * section 6: video                                          -->
+
+    <section class="relative mb-[10vh]">
+        <div class="h-[100%]">
+            <img src="./assets/gifs_videos/sparkler.gif" alt="" class="size-full object-cover">
+        </div>
+        <div class="absolute bottom-[5rem] right-[5rem]">
+            <div class="w-[50%] h-[1px] bg-white mb-[1vh] absolute bottom-[16rem] right-[1rem]"></div>
+            <div class="flex gap-[1vw] justify-end items-center">
+                <h3 class="font-[NY] text-h2 w-[25%] leading-[80px]">Divine Beauty</h3>
+                <p class=" text-[2rem] w-[25%]">Design is the art of applying design, aesthetics, clothing and natural beauty to clothing with its accessories.</p>
+            </div>
+        </div>
+    </section>
+    </main>
+
+    <!-- * footer                                                -->
+    
+    <footer class="">
+        <div class="w-[100%] h-[2px] bg-border-grey mb-[10vh]"></div>
+        <article class=" flex justify-between mx-[2vw] mb-[5vh]">
+            <div>
+                <img src="./assets/img/alomy_logo.png" alt="logo of alomy">
+            </div>
+
+            <div class="flex flex-col gap-[0.5vh] items-start text-[1.2rem]">
+                <a href="">Main Page</a>
+                <a href="">Licensing</a>
+                <a href="">Style Guide</a>
+                <a href="">404 Page</a>
+            </div>
+
+            <div class="flex flex-col gap-[0.5vh] items-start text-[1.2rem]">
+                <a href="">Works</a>
+                <a href="">Changelog</a>
+                <a href="">About</a>
+                <a href="">Services</a>
+            </div>
+
+            <div class="flex flex-col gap-[1vh] text-[1.2rem]">
+                <div class="flex gap-[1vw]">
+                    <a href="">Fb</a>
+                    <a href="">Tw</a>
+                    <a href="">In</a>
+                    <a href="">Db</a>
+                    <a href="">Be</a>
+                </div>
+
+                <div class="w-[50%] h-[1px] bg-p-grey "></div>
+
+                <p class="text-p-grey">Powered by <span class="text-white">Webflow</span></p>
+            </div>
+
+            <div class="flex flex-col gap-[2vh] w-[25%] text-[1.2rem] ">
+                <input type="email" placeholder="Your Email" class=" text-[0.9rem] bg-background-color text-white border-b-white">
+                <input type="submit" value="Submit" class="p-[0.5rem] text-[1rem] border-style:solid border-[1px] rounded-full border-border-grey w-[33%]">
+            </div>
+        </article>
+    </footer>
+</body>
+</html>
